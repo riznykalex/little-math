@@ -1,0 +1,61 @@
+<HTML> 
+
+<HEAD>
+
+<TITLE>Число простое или составное</TITLE> 
+
+<script language="JavaScript"> 
+
+<!-— //
+
+function simple(obj) 
+
+{ var n=obj.num.value 
+
+var p = True 
+
+if (n > 3) 
+
+{ var i=2; 
+
+var r=n/2 
+
+while ((i<=r) && p)
+
+{ p=(n%i!=0); i +=1} 
+
+}
+
+if (p) obj.result.value="простое" 
+
+else obj.result.value="cocтавное" 
+
+}
+
+//-—> 
+
+</script> 
+
+</HEAD> 
+
+<BODY>
+
+Является введенное число простым или составным? 
+
+<FORM name="form1">
+
+<input type="text" name="num" size="8">
+
+<input type="button" value="Определить" onClick="simple(form1)"> 
+
+<input type="text" name="result" size="10"><hr> 
+
+<input type="reset" value="Отменить"> 
+
+</FORM> 
+
+</BODY> 
+
+</HTML>
+
+<!----Функцию simple можно улучшить, если делители числа искать из интервала [2, n1/2 ]. Кроме того, имеет смысл искать делители только для нечетных чисел--->
