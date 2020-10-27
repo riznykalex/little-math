@@ -1,0 +1,61 @@
+<HTML> 
+
+<HEAD>
+
+<TITLE>Наибольший общий делитель двух чисел</TITLE>
+
+<script language="JavaScript">
+
+<!-— //
+
+function nod(obj)
+
+( var n=obj.numl.value 
+
+var m=obj.num2.value 
+
+var p = n%m 
+
+while (p!=0) 
+
+{ n=m 
+
+m=p 
+
+p=n%m 
+
+}
+
+obj.res.value=m 
+
+}
+
+//-—>
+
+</script>
+
+</HEAD>
+
+<BODY>
+
+Наибольший общий делитель двух заданных чисел 
+
+<FORM name="forml">
+
+Введите число <input type="text" name="numl" size="8"><br> 
+
+Введите число <input type="text" name="num2" size="8"><br> 
+
+<input type="button" value="Вычислить" onClick="nod(forml)"><br> 
+
+Наибольший общий делитель <input type="text" name="res"
+
+size="8"><hr>
+
+<input type="reset" value="Отменить"> 
+
+</FORM> 
+
+</BODY> 
+
+</HTML>
