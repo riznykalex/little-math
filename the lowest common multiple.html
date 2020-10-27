@@ -1,0 +1,65 @@
+<HTML> 
+
+<HEAD>
+
+<TITLE>Наименьшее общее кратное двух натуральных чисел</TITLE>
+
+<script language="JavaScript">
+
+<!-— //
+
+function nod(n,m) 
+
+{ var p=n%m 
+
+while (p!=0) 
+
+{ n=m 
+
+m=p 
+
+p=n%m 
+
+}
+
+return m 
+
+} 
+
+function nok(n,m)
+
+{ return n*m/nod(n,m) } 
+
+//-—>
+
+</script>
+
+</HEAD>
+
+<BODY>
+
+Наименьшее общее кратное двух заданных натуральных чисел
+
+<FORM name="form1">
+
+Введите число <input type="text" name="numl" size="8"><br>
+
+Введите число <input type="text" name="num2" size="8"><br>
+
+<input type="button" value="Вычислить"
+
+onClick="form1.res.value=nok(form1.num1.value,form1.num2.value)">
+
+<br>
+
+Наименьшее общее кратное <input type="text" name="res"
+
+size="8"><hr>
+
+<input type="reset" value="Отменить">
+
+</FORM>
+
+</BODY>
+
+</HTML>
